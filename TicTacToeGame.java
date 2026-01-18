@@ -91,6 +91,12 @@ class TicTacToeGame{
 			System.out.println("\n O is Winner");
 			System.exit(0);
 
+		}else if((grid[0][0]=='X'&&grid[1][1]=='X'&&grid[2][2]=='X')||
+	       (grid[0][2]=='X'&&grid[1][1]=='X'&&grid[2][0]=='X')){
+			displayGrid(grid);
+			System.out.println("\n O is Winner");
+			System.exit(0);
+
 		}
 		boolean grids=false;
 		for(int i=0; i<=2; i++){
@@ -159,4 +165,5 @@ class TicTacToeGame{
 		}
 
 	}
+
 
